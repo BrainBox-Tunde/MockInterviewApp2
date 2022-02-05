@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Code Check</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <main>
+        <h1>Afro Bakery</h1>
+        <h2>
+            We have several snacks available!<br>Place your order!
+        </h2>
+        <section>
+            <div class="menu">
+                <h3>Gingerbiscuit</h3>
+                <img src="assets/images/gingerbiscuit.jpg" 
+                width="350" height="300"
+                alt="Gingerbread cookie">
+                <div class="button-container">
+                    <button id="minus-gb">-</button>
+                    <button id="add-gb">+</button>
+                </div>
+            </div>
+            <div class="menu">
+                <h3>Chocolate Candy</h3>
+                <img src="assets/images/choc-candy.jpg"
+                width="350" height="300"
+                alt="chocolate candy">
+                <div class="button-container">
+                    <button id="minus-cc">-</button>
+                    <button id="add-cc">+</button>
+                </div>
+            </div>
+            <div class="menu">
+                <h3>Sugar Cronut</h3>
+                <img src="assets/images/sugar-cronut.jpg" 
+                width="350" height="300"
+                alt="Sugar Sprinkle Cookie">
+                <div class="button-container">
+                    <button id="minus-sugar">-</button>
+                    <button id="add-sugar">+</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="summary">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Cookie Type
+                        </th>
+                        <th>
+                            Quantity
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ginger Biscuit</td>
+                        <td id="qty-gb">0</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Candy</td>
+                        <td id="qty-cc">0</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar Cronut</td>
+                        <td id="qty-sugar">0</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th id="qty-total">0</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div>
+            <h2 id="credit"></h2>
+        </div>
+    </main>
+    <footer>
+        <a href="https://unsplash.com/photos/qYreP9QOdrk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Background bakery image</a> from Unsplash.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
